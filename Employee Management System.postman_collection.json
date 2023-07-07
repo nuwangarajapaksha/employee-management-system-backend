@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "b8631415-4654-44f1-9010-10b7e079cbc1",
+		"name": "Employee Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24356335"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/employee/getAllEmployees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empID\":\"4\",\r\n    \"empName\":\"Nuwa5\",\r\n    \"empAddress\":\"Colombo\",\r\n    \"empNumber\":\"0713848592\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employee/getAllEmployees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"getAllEmployees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/user/getUserByUserIdAndAddress/1/jaffna",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"name\": \"sss666\",\r\n        \"address\": \"jaffna\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/user/getUserByUserIdAndAddress/1/jaffna",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"getUserByUserIdAndAddress",
+						"1",
+						"jaffna"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/alarms/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alarms/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alarms",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
